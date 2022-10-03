@@ -1,0 +1,20 @@
+html{
+    margin: 0px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 1rem 1rem;
+}
+.title{
+    font-size: 6rem;
+    color:white;
+    position: absolute;
+    border: 5px white solid;
+    top: 8rem;
+    background-color: black;
+    padding: 3rem 5rem;
+    border-radius: 20%;
+}
