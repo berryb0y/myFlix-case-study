@@ -14,7 +14,7 @@
     </div>
   </header>
   <body>
-    <div class="beginning">
+    <div class="flex-xaxis">
       <div class="beginning-section">
         <h2 class="beginning-section-header">Overview</h2>
         <p class="beginning-section-info">
@@ -40,6 +40,81 @@
           architecture, getting all of our endpoints set up, and inputting all
           our information into MongoDB. It was written using the React library,
           styled using bootstrap, and hosted online through gh-pages.
+        </p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <h2 class="title-top-border">Building the API</h2>
+      <div class="flex-xaxis">
+        <p class="middle-section-1">
+          The first step for creating a REST API is to determine which requests
+          are going to be necessary while using CRUD. CRUD stands for create,
+          read, update, and delete. I made a list of all the different URL
+          endpoints this application was going to use and I made a table to show
+          all this information along with a function per endpoint for where the
+          URL will take you. Before I went any further I tested each endpoint
+          with Postman.
+        </p>
+        <a
+          ><img class="case-json2" src="/img/case-json2.png" alt="" />Database
+          schema</a
+        >
+      </div>
+      <a><img class="case-json1" src="img/case-json1.png" alt="" /></a>
+      <div class="flex-xaxis">
+        <div>
+          <h2>MongoDB</h2>
+          <p>
+            I linked MongoDB to my profile after creating the API within their
+            application. In there I added all the movies in the collection so
+            the data could later be pulled from it to be presented in the myFlix
+            project. I created a user initially to test the login then later
+            optimized it so when people register it sends a post request to
+            MongoDB and adds their user information to the user collection.
+          </p>
+        </div>
+        <a
+          ><img class="case-mongodb" src="/img/case-mongodb.png" alt="" />Two
+          movies from the MongoDB API</a
+        >
+      </div>
+      <div class="flex-xaxis break">
+        <div>
+          <h2>App structure</h2>
+          <p>
+            Angular is a component-based JavaScript framework that is a good fit
+            for this project. This project is going to be compromised of
+            components. The first ones that got set up were the registration and
+            login components. These two components interact with MongoDB to
+            ensure that the information is permitted and authorized. Once myFlix
+            sees that you're logged in and authorized it reroutes you to a movie
+            screen where you can view all the movies. Each movie panel has a few
+            buttons like description, genre, & director. For example if you
+            click director then it looks into the information of that movie,
+            finds that director, and pulls up a model with that director's name,
+            bio, and birthdate. There is also a banner at the top that will
+            allow the user to view and edit their profile information with read
+            and update requests.
+          </p>
+        </div>
+        <a
+          ><img class="break" src="/img/case-genre-ex.png" alt="" />Ex: movie
+          genre description</a
+        >
+      </div>
+      <div>
+        <h2>Solution</h2>
+        <p class="half">
+          The most challenging part of this project was integrating multiple
+          technologies. I had a tough time initially being able to log
+          in/register any users. I would use postman to create a user to login
+          with and when I checked the console I kept getting errors or that it
+          was having trouble connecting through heroku and MongoDB. To get
+          through this problem I had to re-read their documentation and take it
+          step by step a second time and look through my code to make sure
+          everything was going right. Once it was fixed I was able to fix all
+          other issues by troubleshooting them through the console and seeing
+          exactly where it came from.
         </p>
       </div>
     </div>

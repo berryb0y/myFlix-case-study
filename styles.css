@@ -1,8 +1,12 @@
 html{
     margin: 0px;
+    height: 200rem;
 }
 h2{
     font-size: 2.5rem;
+}
+p{
+    font-size: 1.3rem;
 }
 .banner{
     display: flex;
@@ -22,11 +26,10 @@ h2{
     padding: 3rem 5rem;
     border-radius: 20%;
 }
-.beginning{
+.flex-xaxis{
     flex-direction: row;
     display: flex;
     width: 100%;
-    /* padding-left: 5rem; */
     justify-content: center;
     justify-content: space-around;
 }
@@ -40,4 +43,24 @@ h2{
 .beginning-section{
     border: 3px solid black;
     border-radius: 10px;
+}
+.middle-section{
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+.case-json1{
+    width: 97.5%;
+    border: 2px solid lightblue;
+    margin-bottom: 5rem;
+}
+.case-json2{
+    margin-right: 2.3rem;
+    border: 2px solid lightblue;
+    margin-left: 1.2rem;
+}
+.break{
+    margin-top: 2rem;
+}
+.half{
+    width:50%
 }
